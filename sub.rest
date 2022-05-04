@@ -1,0 +1,30 @@
+
+POST http://localhost:5000/subscribers/add
+Content-Type: application/json
+
+{
+    "name": "our channel",
+    "subscribeToChannel": "ahmad's channel"
+}
+
+#####
+GET http://localhost:5000/subscribers
+
+####
+
+GET http://localhost:5000/subscribers/62722a8f38360e25f09bc893
+
+
+######
+
+PATCH  http://localhost:5000/subscribers/62722a8f38360e25f09bc893
+Content-Type: application/json
+
+{
+    "name": "new name",
+    "subscribeToChannel": "new channel"
+}
+
+#######
+
+DELETE http://localhost:5000/subscribers/627238bee51c6a2de2386440
